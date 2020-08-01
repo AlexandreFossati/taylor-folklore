@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Folklore</title>
+</head>
+<body>
+
+    <div id="initialScreen" class="container index4">
+        <div class="alert">
+            <p>This page play videos</p>
+            <div class="btnOk" onclick="onApprove()">OK</div>
+        </div>
+    </div>
+
+    <div id="menu" class="container index3">
+        <div class="songs">
+            <div class="btnMenu" onclick="openMenu()">Songs</div>
+            <div id="songsMenu" class="menu">
+                <div class="song" onclick="selectSong()">the 1</div>
+                <div class="song" onclick="selectSong()">cardigan</div>
+                <div class="song" onclick="selectSong()">the last great american dynasty</div>
+                <div class="song" onclick="selectSong()">exile</div>
+                <div class="song" onclick="selectSong()">my tears ricochet</div>
+                <div class="song" onclick="selectSong()">mirrorball</div>
+                <div class="song" onclick="selectSong()">seven</div>
+                <div class="song" onclick="selectSong()">august</div>
+                <div class="song" onclick="selectSong()">this is me trying</div>
+                <div class="song" onclick="selectSong()">illicit affairs</div>
+                <div class="song" onclick="selectSong()">invisible string</div>
+                <div class="song" onclick="selectSong()">mad woman</div>
+                <div class="song" onclick="selectSong()">epiphany</div>
+                <div class="song" onclick="selectSong()">betty</div>
+                <div class="song" onclick="selectSong()">peace</div>
+                <div class="song" onclick="selectSong()">hoax</div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container" style="z-index: 2;">
+        <video id="video1">
+            <source src="res/videos/cardigan.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container" style="z-index: 1;">
+        <video id="video2">
+            <source src="res/videos/the1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,143 @@
+@font-face { font-family: stalker1; src: url('../res/fonts/stalker2.ttf'); } 
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.index4 {
+    z-index: 4;
+}
+
+.index3 {
+    z-index: 3;
+}
+
+.alert {
+    background-color: rgb(235, 221, 199);
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: stalker1;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 5s;
+}
+
+.alert.change {
+    opacity: 0
+}
+
+.btnOk {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.songs {
+    text-align: left;
+    /* background-color: rgb(247, 199, 199); */
+    height: 100%;
+    width: 600px;
+    margin-top: 10%;
+    margin-left: 20px;
+    font-family: stalker1;
+    font-size: 24px;
+    color: #fff;
+}
+
+.btnMenu {
+    /* background-color: rgb(109, 128, 82); */
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 5s, width 5s;
+}
+
+.btnMenu.change {
+    width: 0px;
+    height: 0px;
+}
+
+.menu {
+    /* background-color: rgb(223, 153, 153); */
+    z-index: 0;
+    flex-wrap: wrap;
+    font-size: 16px;
+    opacity: 0;
+    /* display: flex; */
+    display: none;
+    transition: opacity 5s;
+}
+
+.menu.change {
+    opacity: 0;
+    display: flex;
+}
+
+.menu.change.opacity {
+    opacity: 1;
+}
+
+.menu>div {
+    flex: 1 1 250px;
+}
+
+.song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0px 10px;
+    padding: 2px;
+    /* border: solid 1px #fff; */
+    cursor: pointer;
+}
+
+.song:hover {
+    text-decoration: underline;
+}
+
+#video1 {
+    height: 100%;
+    opacity: 1;
+    transition: opacity 5s;
+}
+
+#video1.change {
+    opacity: 1;
+}
+
+#video2 {
+    height: 100%;
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+#video2.change {
+    opacity: 1;
+}
+
+@media (max-width: 620px) {
+    .songs {
+        width: 300px;
+    }
+}
